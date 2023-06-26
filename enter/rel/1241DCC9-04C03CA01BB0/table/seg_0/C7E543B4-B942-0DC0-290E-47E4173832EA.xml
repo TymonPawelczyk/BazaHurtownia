@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C7E543B4-B942-0DC0-290E-47E4173832EA" name="jobs">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>E35797EE-EF3C-5197-5A68-1DC4FEFE95A6</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="F12DD92B-D586-1993-FAC3-A3480DF8A452">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>747EB59B-E955-FC4E-A3BB-F1BD095519EE</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="job_title" id="53020907-3116-08F9-0809-E46D41C20554">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>66AB67C3-4FA0-125D-76FE-C9CA13D14A6A</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="7DC74287-CA10-A3E7-7803-E481C082CABF">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>C825A1B0-EDDC-5D60-8B8B-EF7FBEC4B9B2</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0DBB42DA-40A1-A3B3-38A3-B92FD729C523" name="jobs_PK">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>8A5937BB-EE30-D92B-4DC9-1928FE3BBDD8</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F12DD92B-D586-1993-FAC3-A3480DF8A452"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

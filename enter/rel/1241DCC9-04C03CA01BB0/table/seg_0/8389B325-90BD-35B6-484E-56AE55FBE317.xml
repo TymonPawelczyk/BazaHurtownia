@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8389B325-90BD-35B6-484E-56AE55FBE317" name="shipping">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>187B9CCE-1AA6-1FBB-265F-971B32336BD1</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="shipp_id" id="527C4F92-8617-A851-0ABC-FFEA1FBBD902">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>FE89E35C-3E27-9AAC-0FD2-BDFC993BEEBD</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="order_id1" id="E533097F-E583-C1E6-AF17-0DF81BF73CB2">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>8E6716E6-88C1-3DC3-6FAA-D8EAAB97D49C</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="shipping_method" id="FDCC5A97-A337-3DC7-D257-C4DB7E7DA432">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>221AF04F-6091-6FB2-59B7-1C5377B50BF1</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="shipping_status" id="47B3EA6D-502A-6D17-8D37-0AB52CA9A580">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>20EEF8DF-1BB3-4300-601E-B812F3DCE1FF</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="shipping_date" id="BA1A94A2-B508-8120-D9C2-1DFD29752D11">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>8AA9E043-9EF3-655E-2865-C01739B69936</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="order_id" id="3508DF74-05E8-72AD-19BD-C408B3019EF8">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 12:42:57 UTC</createdTime>
+<generatorID>E9126569-08BF-E01A-B544-042B171F6F90</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="39D00DA0-CD3C-2E92-0FD9-B011B82501C6" referredColumn="1F78B91C-121E-0DB1-DBAC-90D02BF54B1A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B1566529-C815-C694-6720-A73384F0164F" name="shipping_PK">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>CC6FCF17-4D95-2D86-2779-722BD82F2DF9</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="527C4F92-8617-A851-0ABC-FFEA1FBBD902"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="60B569A9-1350-BBFA-FBB5-B51DA922CAE0" name="shipping__IDX">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 12:42:57 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>CD1CA8A5-9DFF-8E0B-E043-5FE12B965E20</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="3508DF74-05E8-72AD-19BD-C408B3019EF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C2930817-5B09-190F-7186-260F1A17E0AD" name="shipping_orders_FK">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 12:42:57 UTC</createdTime>
+<generatorID>CD1CA8A5-9DFF-8E0B-E043-5FE12B965E20</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3508DF74-05E8-72AD-19BD-C408B3019EF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5C1E0112-0B32-1438-8B29-3756B38264AB" name="customers">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>6618FCD9-676B-B973-70C7-3374FEB437B5</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="customer_id" id="BC42EB29-0DCE-37DB-63E6-B18B4CA9A14A">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>DD1B8A9A-045B-FD69-DE38-E990CB728771</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="6F917122-336C-B451-B519-F2EB51B2233D">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>D5759A64-2A9E-FD3D-994A-0D1D4CB958D3</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="surname" id="EA79CE69-36FE-F4F8-0653-3998331A0B3A">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>FF6919D5-F6CD-D0A0-6511-A015F35C9031</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="D0C28DC9-0214-A424-E5B8-BC12072582CD">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>AB445A5F-BACD-1387-9A1F-DE90EDD6CED6</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="country" id="B294516F-D2A3-C874-26FA-AECA036C93E1">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>D1A861C0-0F33-2ED0-3EC2-DCE54DAB726F</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="city" id="B2CEAB2D-FA7D-FCE8-DB18-7AE579749E2C">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>96CEB87C-22F1-1F47-A747-CBC60890BFD3</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="zip_code" id="09105D52-C740-A81D-5E5B-57241E51E50E">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>1D4AF1D4-FD7C-B852-0765-3FEBDC8899A0</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address_line1" id="EF0525D8-A7E2-8B2C-7712-47AEDF558477">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>705B5EFE-E358-4F79-25B9-0017BDE4F74A</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address_line2" id="778AF73B-9BB3-DD40-FA1F-A5A6CC19673C">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>16CCCA91-220B-82DD-969C-55FA83474ABC</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_at" id="FBD2B30E-8FF0-0C27-43B3-B2C5547DD4F5">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>223EC730-9725-D51C-075D-69C18D607A5B</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2E68B07D-62F1-5F35-78E2-05BEE0B5F58B" name="customers_PK">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>2F512E57-B3F8-ED7F-C180-189E03F4D72B</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC42EB29-0DCE-37DB-63E6-B18B4CA9A14A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

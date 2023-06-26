@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E35797EE-EF3C-5197-5A68-1DC4FEFE95A6" name="jobs">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:25:36 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="747EB59B-E955-FC4E-A3BB-F1BD095519EE">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:25:41 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="job title" id="66AB67C3-4FA0-125D-76FE-C9CA13D14A6A">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:25:48 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="C825A1B0-EDDC-5D60-8B8B-EF7FBEC4B9B2">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:26:02 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8A5937BB-EE30-D92B-4DC9-1928FE3BBDD8" name="jobs PK">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:25:45 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>747EB59B-E955-FC4E-A3BB-F1BD095519EE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

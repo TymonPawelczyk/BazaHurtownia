@@ -1,0 +1,173 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="40C3EC66-51E8-8F3B-008A-8092A0C3CEDC" name="employee">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:23:31 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="emp id" id="AEA79E02-76B0-2C27-28EE-E6FCDB3A083D">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:23:42 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="6B69684D-BDEB-29AA-6856-B392DCF3045D">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:23:46 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="surname" id="49A71521-9354-3613-4BA5-FDBFFE5B3122">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:23:52 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phone" id="9D107120-8FD7-85D7-C954-B28905625B14">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:24:03 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="D11447DE-F1B2-D0B7-CC92-3BE25EA13CD5">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:24:08 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="address" id="85904A2D-D150-3689-8FF0-5BD4701B2557">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:24:24 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="salary" id="CF0143A5-314E-AA9F-CEF8-A7A822BD1A82">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:24:31 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="start date" id="B20D0739-03D7-5A0D-A84B-A5B3D7C01128">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:24:39 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="jobs id" id="866E2308-7D7D-1CB6-244F-587C2AD1682A">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 12:34:11 UTC</createdTime>
+<generatorID>E7F87075-2D25-6C59-6DA4-C293AD0994AE</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<referedAttribute>747EB59B-E955-FC4E-A3BB-F1BD095519EE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="job title" id="1A1588A7-F0A5-C135-29D5-75736FFDBBE5">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 13:05:06 UTC</createdTime>
+<generatorID>5B19B435-2BA5-D8DC-9785-235CB8536C84</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F5A175F9-C780-8865-D6F7-7AE450B640CA" name="employee PK">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:24:57 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AEA79E02-76B0-2C27-28EE-E6FCDB3A083D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

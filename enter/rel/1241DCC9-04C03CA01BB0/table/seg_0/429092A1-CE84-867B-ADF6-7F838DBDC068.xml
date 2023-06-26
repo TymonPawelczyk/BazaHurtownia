@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="429092A1-CE84-867B-ADF6-7F838DBDC068" name="vehicles">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>E423DD67-C992-7B5A-FE6B-1D320889DB66</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="vehicle_id" id="5F46E8FA-F9BA-96E4-A9CD-8E8E4A637C93">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>2F53F465-9117-2E30-8280-823ED2578F75</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="brand" id="DC8DB2EF-C9FC-1CED-0558-BBD7A79EE490">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>885F8D31-1D5A-D762-5B3F-B12C194F2EF2</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="model" id="BE21C405-39D7-58B8-7EF9-8D418355CD23">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>72CF2229-6E94-6828-BFDF-5E9C97F09CED</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="generation" id="120B4E63-7B0C-3AA0-B014-8777E0628BEA">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>C4B3AAA2-A0CE-FBBC-B0C3-FCF2D8063783</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="year" id="9FD48BEC-B1E7-7B17-F728-E7F61AA58B23">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>67C98954-7E4F-648F-F60D-441F7D23F01C</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="version" id="46A5D22E-87F5-A863-F3F5-771A803A7B47">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>C2F15143-DD35-10F7-B37E-37319D4FC294</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="engine" id="D3302152-917D-895C-FFF9-F611DD77AAB3">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>6249F318-C467-8C4E-DC87-811657CF1F9B</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="engine_code" id="C47C6D8A-730D-F84C-37C5-0CB98305A583">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>A3A85227-5D9F-0128-C2E5-C4FA25022358</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HP" id="69BEE13F-F58A-8497-BF4E-4F806ECFC5A2">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>AA455540-993D-1F20-A6A2-2C34AC0A898A</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CA9CEA7B-70DB-5D5C-9C1F-125F5FC1431D" name="vehicles_PK">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:25 UTC</createdTime>
+<generatorID>F83093B6-1BA4-7193-2E23-AD6F64E588F0</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F46E8FA-F9BA-96E4-A9CD-8E8E4A637C93"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

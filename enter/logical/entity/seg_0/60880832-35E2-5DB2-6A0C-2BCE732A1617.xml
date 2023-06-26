@@ -1,0 +1,216 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="60880832-35E2-5DB2-6A0C-2BCE732A1617" name="car parts">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:10:16 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="B8681414-9F47-BBD7-27F6-B41F2E26C470">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:10:25 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="part number" id="08261696-B2A3-5C10-102F-2DE86F938FD2">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:10:29 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="C651501A-12A2-C865-8341-A511E9FC05B6">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:10:43 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="C0BAE100-318A-612A-5B2F-C89C611EB319">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:10:49 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="price" id="EFFE0105-4D5B-098F-CDE7-827751C0A7BB">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:12:04 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="in stock" id="6665B7C0-B6CF-B506-D88F-5FB8A3611D22">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:12:12 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="model" id="35468F69-F4DE-FB57-4ACD-2480C38B55E3">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:12:27 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="year" id="EEAC5E67-FF04-7948-11D5-6532A9A17F21">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:12:34 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="image" id="38F296BC-9CBD-BB42-ACE4-4EA7F9AE3F88">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:12:47 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT010</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="created at" id="FF72B475-2F4E-D2E8-DBD6-CCFACBBAFCFD">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:12:53 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="manufacturer id" id="BDA55776-6479-A641-9816-1DBF71E3857A">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:49:15 UTC</createdTime>
+<generatorID>979CE253-0504-4BAE-0462-91B7357C0F50</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<referedAttribute>17CB42F9-3881-ED15-F343-1A785F261BAB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cat id" id="86A9F913-DD31-55E4-CDB9-2FDC258330E8">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 12:33:34 UTC</createdTime>
+<generatorID>4DBF1058-FB2B-3E15-1CB8-4C5598571850</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<referedAttribute>AD7B089A-8181-7692-A6E3-ED39CFD856A8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vehicle id" id="895F226A-E4FD-6503-1F4B-4A1E496AF72B">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 12:34:44 UTC</createdTime>
+<generatorID>C3A780FA-2535-3325-0B07-AF4A9793195C</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<referedAttribute>2F53F465-9117-2E30-8280-823ED2578F75</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4ECD1ED1-6E60-DC20-CDEC-5DC5A0AFBFA8" name="car_parts_PK">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:10:58 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B8681414-9F47-BBD7-27F6-B41F2E26C470</attributeRef>
+<attributeRef>BDA55776-6479-A641-9816-1DBF71E3857A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6BB8D085-4387-D1E4-54EC-20FF93761814" name="Relation_10">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 12:42:57 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="orders_order_id" id="CA9C0339-DF4F-AC5A-C701-77E2AB0252CF">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 12:42:57 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="763B003D-D9FA-CAF1-DB37-D0814E4B7184" referredColumn="1F78B91C-121E-0DB1-DBAC-90D02BF54B1A"/>
+</associations>
+</Column>
+<Column name="car_parts_id" id="C2EB0CA7-ED1B-CDCB-DB5C-9F234CB9F583">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 12:42:57 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4113672F-E063-4D91-4823-337F7979E804" referredColumn="8CB48D7C-6F23-0507-079A-D00371F1D223"/>
+</associations>
+</Column>
+<Column name="car_parts_manu_id" id="E0865549-B29F-8405-E553-9EE3401C0BAB">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 12:42:57 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4113672F-E063-4D91-4823-337F7979E804" referredColumn="19E6012B-006B-C578-51B7-3FE29619E05F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0980B42E-331A-4B0E-0A20-2F096788F935" name="Relation_10_PK">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 12:42:57 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA9C0339-DF4F-AC5A-C701-77E2AB0252CF"/>
+<colUsage columnID="C2EB0CA7-ED1B-CDCB-DB5C-9F234CB9F583"/>
+<colUsage columnID="E0865549-B29F-8405-E553-9EE3401C0BAB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5C5D0522-3482-9910-6570-678EBBB8AF81" name="Relation_10_orders_FK">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 12:42:57 UTC</createdTime>
+<generatorID>35360E3C-3268-F4BC-4CF9-3EE9F345D01C</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA9C0339-DF4F-AC5A-C701-77E2AB0252CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C6C2EF1E-FED8-D80C-753B-97A7027A9373" name="Relation_10_car_parts_FK">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 12:42:57 UTC</createdTime>
+<generatorID>35360E3C-3268-F4BC-4CF9-3EE9F345D01C</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2EB0CA7-ED1B-CDCB-DB5C-9F234CB9F583"/>
+<colUsage columnID="E0865549-B29F-8405-E553-9EE3401C0BAB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

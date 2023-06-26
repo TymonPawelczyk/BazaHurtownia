@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4B37EF49-35BE-30A3-9019-F7169CD49D6A" name="returns">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:02:16 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="return id" id="5A5BDA27-ADB8-ED37-C2FE-A617055AB6E2">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 11:23:27 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="car part" id="A2B12FF3-EF1A-F310-AA3A-F8700D1DFBEE">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:02:48 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="return reason" id="7E4432CE-C65D-03CF-3A4F-EA14FDDCE27B">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:02:57 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="return date" id="8C3DCEC3-7B5A-016D-53F4-B5DE0DBACD2C">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:03:07 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="orders ord id" id="1EA69147-AF16-1A4E-F504-5B501F0EDD50">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 12:42:34 UTC</createdTime>
+<generatorID>D9C51668-5300-093B-0822-7DECD810F23C</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<referedAttribute>13CF878F-CAF2-60E3-2D30-93931AA595E6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="order id1" id="FA30E2A1-5FDB-D000-0518-2987DA1586E0">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 13:05:06 UTC</createdTime>
+<generatorID>5C6B0373-B4B8-B7FF-4E8E-90A28C81F18B</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="customer id" id="9F3BCFC6-0ACE-6545-2AE3-F03F0C721C20">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 13:05:06 UTC</createdTime>
+<generatorID>95609E74-8581-2F06-2251-918840378BEA</generatorID>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A17CD44F-BC06-C76A-7083-3AAF856E8895" name="returns PK">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-21 19:02:32 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5A5BDA27-ADB8-ED37-C2FE-A617055AB6E2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

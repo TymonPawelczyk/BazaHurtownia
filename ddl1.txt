@@ -1,0 +1,200 @@
+CREATE TABLE car_parts (
+    id                            NUMBER(11) NOT NULL,
+    part_number                   VARCHAR2(255),
+    name                          VARCHAR2(255),
+    description                   VARCHAR2(255),
+    price                         NUMBER(10, 2),
+    in_stock                      CHAR(1),
+    model                         VARCHAR2(255),
+    year                          DATE,
+    image                         BLOB,
+    created_at                    DATE,
+    manufacturers_manufacturer_id NUMBER(11) NOT NULL,
+    categories_cat_id             NUMBER(11) NOT NULL,
+    vehicles_vehicle_id           NUMBER(11) NOT NULL
+);
+
+ALTER TABLE car_parts ADD CONSTRAINT car_parts_pk PRIMARY KEY ( id,
+                                                                manufacturers_manufacturer_id );
+
+CREATE TABLE categories (
+    cat_id               NUMBER(11) NOT NULL,
+    name_cat             VARCHAR2(255),
+    parent_cat_parent_id NUMBER(11) NOT NULL
+);
+
+ALTER TABLE categories ADD CONSTRAINT categories_pk PRIMARY KEY ( cat_id );
+
+CREATE TABLE customers (
+    customer_id   NUMBER(11) NOT NULL,
+    name          VARCHAR2(255),
+    surname       VARCHAR2(255),
+    email         VARCHAR2(255),
+    country       VARCHAR2(255),
+    city          VARCHAR2(255),
+    zip_code      VARCHAR2(255),
+    address_line1 VARCHAR2(255),
+    address_line2 VARCHAR2(255),
+    created_at    DATE
+);
+
+ALTER TABLE customers ADD CONSTRAINT customers_pk PRIMARY KEY ( customer_id );
+
+CREATE TABLE employee (
+    emp_id     NUMBER(11) NOT NULL,
+    name       VARCHAR2(255),
+    surname    VARCHAR2(255),
+    job_title  VARCHAR2(255),
+    phone      VARCHAR2(255),
+    email      VARCHAR2(255),
+    address    VARCHAR2(255),
+    salary     NUMBER(10, 2),
+    start_date DATE,
+    jobs_id    NUMBER(11) NOT NULL
+);
+
+ALTER TABLE employee ADD CONSTRAINT employee_pk PRIMARY KEY ( emp_id );
+
+CREATE TABLE jobs (
+    id          NUMBER(11) NOT NULL,
+    job_title   VARCHAR2(255),
+    description VARCHAR2(255)
+);
+
+ALTER TABLE jobs ADD CONSTRAINT jobs_pk PRIMARY KEY ( id );
+
+CREATE TABLE manufacturers (
+    manufacturer_id NUMBER(11) NOT NULL,
+    description     VARCHAR2(255),
+    logo            BLOB,
+    website         VARCHAR2(255),
+    created_at      DATE
+);
+
+ALTER TABLE manufacturers ADD CONSTRAINT manufacturers_pk PRIMARY KEY ( manufacturer_id );
+
+CREATE TABLE orders (
+    order_id         NUMBER(11) NOT NULL,
+    customer_id1     NUMBER(11),
+    order_date       DATE,
+    shipping_address VARCHAR2(255),
+    tatal_price      NUMBER(10, 2),
+    payment_method   VARCHAR2(255),
+    created_at       DATE,
+    customer_id      NUMBER(11) NOT NULL,
+    emp_id           NUMBER(11) NOT NULL
+);
+
+ALTER TABLE orders ADD CONSTRAINT orders_pk PRIMARY KEY ( order_id );
+
+CREATE TABLE parent_cat (
+    parent_id    NUMBER(11) NOT NULL,
+    cat_id       NUMBER(11),
+    name_par_cat VARCHAR2(255)
+);
+
+ALTER TABLE parent_cat ADD CONSTRAINT parent_cat_pk PRIMARY KEY ( parent_id );
+
+CREATE TABLE relation_10 (
+    orders_order_id   NUMBER(11) NOT NULL,
+    car_parts_id      NUMBER(11) NOT NULL,
+    car_parts_manu_id NUMBER(11) NOT NULL
+);
+
+ALTER TABLE relation_10
+    ADD CONSTRAINT relation_10_pk PRIMARY KEY ( orders_order_id,
+                                                car_parts_id,
+                                                car_parts_manu_id );
+
+CREATE TABLE returns (
+    return_id     NUMBER(11) NOT NULL,
+    order_id1     NUMBER(11),
+    customer_id   NUMBER(11),
+    car_part      NUMBER(11),
+    return_reason VARCHAR2(255),
+    return_date   DATE,
+    order_id      NUMBER(11) NOT NULL
+);
+
+CREATE UNIQUE INDEX returns__idx ON
+    returns (
+        order_id
+    ASC );
+
+ALTER TABLE returns ADD CONSTRAINT returns_pk PRIMARY KEY ( return_id );
+
+CREATE TABLE shipping (
+    shipp_id        NUMBER(11) NOT NULL,
+    order_id1       NUMBER(11),
+    shipping_method VARCHAR2(255),
+    shipping_status VARCHAR2(255),
+    shipping_date   DATE,
+    order_id        NUMBER(11) NOT NULL
+);
+
+CREATE UNIQUE INDEX shipping__idx ON
+    shipping (
+        order_id
+    ASC );
+
+ALTER TABLE shipping ADD CONSTRAINT shipping_pk PRIMARY KEY ( shipp_id );
+
+CREATE TABLE vehicles (
+    vehicle_id  NUMBER(11) NOT NULL,
+    brand       VARCHAR2(255),
+    model       VARCHAR2(255),
+    generation  VARCHAR2(255),
+    year        DATE,
+    version     VARCHAR2(255),
+    engine      VARCHAR2(255),
+    engine_code VARCHAR2(255),
+    hp          NUMBER(11)
+);
+
+ALTER TABLE vehicles ADD CONSTRAINT vehicles_pk PRIMARY KEY ( vehicle_id );
+
+ALTER TABLE car_parts
+    ADD CONSTRAINT car_parts_categories_fk FOREIGN KEY ( categories_cat_id )
+        REFERENCES categories ( cat_id );
+
+ALTER TABLE car_parts
+    ADD CONSTRAINT car_parts_manufacturers_fk FOREIGN KEY ( manufacturers_manufacturer_id )
+        REFERENCES manufacturers ( manufacturer_id );
+
+ALTER TABLE car_parts
+    ADD CONSTRAINT car_parts_vehicles_fk FOREIGN KEY ( vehicles_vehicle_id )
+        REFERENCES vehicles ( vehicle_id );
+
+ALTER TABLE categories
+    ADD CONSTRAINT categories_parent_cat_fk FOREIGN KEY ( parent_cat_parent_id )
+        REFERENCES parent_cat ( parent_id );
+
+ALTER TABLE employee
+    ADD CONSTRAINT employee_jobs_fk FOREIGN KEY ( jobs_id )
+        REFERENCES jobs ( id );
+
+ALTER TABLE orders
+    ADD CONSTRAINT orders_customers_fk FOREIGN KEY ( customer_id )
+        REFERENCES customers ( customer_id );
+
+ALTER TABLE orders
+    ADD CONSTRAINT orders_employee_fk FOREIGN KEY ( emp_id )
+        REFERENCES employee ( emp_id );
+
+ALTER TABLE relation_10
+    ADD CONSTRAINT relation_10_car_parts_fk FOREIGN KEY ( car_parts_id,
+                                                          car_parts_manu_id )
+        REFERENCES car_parts ( id,
+                               manufacturers_manufacturer_id );
+
+ALTER TABLE relation_10
+    ADD CONSTRAINT relation_10_orders_fk FOREIGN KEY ( orders_order_id )
+        REFERENCES orders ( order_id );
+
+ALTER TABLE returns
+    ADD CONSTRAINT returns_orders_fk FOREIGN KEY ( order_id )
+        REFERENCES orders ( order_id );
+
+ALTER TABLE shipping
+    ADD CONSTRAINT shipping_orders_fk FOREIGN KEY ( order_id )
+        REFERENCES orders ( order_id );

@@ -1,0 +1,158 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="7FF39B6A-49E0-A1C8-CD69-DA6F9C642C46" name="V_car_parts">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 13:52:59 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW Car_parts_by_manufacturer AS
+SELECT manufacturers.manufacturer_id, manufacturers.description, manufacturers.logo, car_parts.id, car_parts.part_number, car_parts.name, car_parts.description, car_parts.price
+FROM car_parts
+INNER JOIN manufacturers ON car_parts.manufacturers_manufacturer_id = manufacturers.manufacturer_id;
+]]></userDefinedSQL>
+<parsed>true</parsed>
+<originalTableID>1981BB00-CEDA-42BA-A036-F8696B524D24</originalTableID>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="manufacturer_id" id="7AFB10C8-B63A-A921-CB3D-94303A3BA567">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 13:53:44 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (11)</dataType>
+<headerAlias>manufacturer_id</headerAlias>
+<reference>false</reference>
+<referencedColumn>466974F7-1E98-32ED-E0A9-822080BDFB61</referencedColumn>
+<table>F100F164-C792-FD25-56A0-FE87840BF2A0</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="description" id="C847E57C-0F8E-20D5-828B-340A224E7385">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 13:52:59 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (255)</dataType>
+<headerAlias>description</headerAlias>
+<reference>false</reference>
+<referencedColumn>91E172FB-E891-F813-C17B-3A91EACBDEFB</referencedColumn>
+<table>1981BB00-CEDA-42BA-A036-F8696B524D24</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="logo" id="21B911EF-30EE-D81A-1CF7-F883E9D14D6F">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 13:53:44 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>BLOB</dataType>
+<headerAlias>logo</headerAlias>
+<reference>false</reference>
+<referencedColumn>7D5882B6-8096-1932-4D9D-15F5C2809BC2</referencedColumn>
+<table>F100F164-C792-FD25-56A0-FE87840BF2A0</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="41A89584-DE78-3346-334E-C4F0A654574E">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 13:52:59 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (11)</dataType>
+<headerAlias>id</headerAlias>
+<reference>false</reference>
+<referencedColumn>8CB48D7C-6F23-0507-079A-D00371F1D223</referencedColumn>
+<table>1981BB00-CEDA-42BA-A036-F8696B524D24</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="part_number" id="B2FD577A-64E5-8A37-5343-1D1C5EE3AE7B">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 13:52:59 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (255)</dataType>
+<headerAlias>part_number</headerAlias>
+<reference>false</reference>
+<referencedColumn>5F6418FF-4DEF-BB37-9F03-66FB9B72EC0B</referencedColumn>
+<table>1981BB00-CEDA-42BA-A036-F8696B524D24</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="name" id="957EC081-7DC5-2A3A-C7AE-1F4C5987E7C0">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 13:52:59 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (255)</dataType>
+<headerAlias>name</headerAlias>
+<reference>false</reference>
+<referencedColumn>E2BC3B1F-1B55-F917-8450-EF7BAB85C263</referencedColumn>
+<table>1981BB00-CEDA-42BA-A036-F8696B524D24</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="description_1" id="9F9BDD8B-B8EC-6CFB-AF6E-79947BC1AE0B">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 13:53:44 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (255)</dataType>
+<headerAlias>description_1</headerAlias>
+<reference>false</reference>
+<referencedColumn>3DB7AE21-0652-E3FE-39AA-0E80D5EF1C15</referencedColumn>
+<table>1981BB00-CEDA-42BA-A036-F8696B524D24</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="price" id="B93163BA-A290-C57B-C9E2-ACE100981609">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 13:52:59 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10,2)</dataType>
+<headerAlias>price</headerAlias>
+<reference>false</reference>
+<referencedColumn>01F49C99-9EEC-FB28-A399-7974463D5248</referencedColumn>
+<table>1981BB00-CEDA-42BA-A036-F8696B524D24</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1981BB00-CEDA-42BA-A036-F8696B524D24">
+<container>true</container>
+<tableName>car_parts</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F100F164-C792-FD25-56A0-FE87840BF2A0">
+<container>true</container>
+<tableName>manufacturers</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="466974F7-1E98-32ED-E0A9-822080BDFB61">
+<columnName>manufacturer_id</columnName>
+<tableName>manufacturers</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="91E172FB-E891-F813-C17B-3A91EACBDEFB">
+<columnName>description</columnName>
+<tableName>manufacturers</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7D5882B6-8096-1932-4D9D-15F5C2809BC2">
+<columnName>logo</columnName>
+<tableName>manufacturers</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8CB48D7C-6F23-0507-079A-D00371F1D223">
+<columnName>id</columnName>
+<tableName>car_parts</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5F6418FF-4DEF-BB37-9F03-66FB9B72EC0B">
+<columnName>part_number</columnName>
+<tableName>car_parts</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E2BC3B1F-1B55-F917-8450-EF7BAB85C263">
+<columnName>name</columnName>
+<tableName>car_parts</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3DB7AE21-0652-E3FE-39AA-0E80D5EF1C15">
+<columnName>description</columnName>
+<tableName>car_parts</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="01F49C99-9EEC-FB28-A399-7974463D5248">
+<columnName>price</columnName>
+<tableName>car_parts</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="19E6012B-006B-C578-51B7-3FE29619E05F">
+<columnName>manufacturers_manufacturer_id</columnName>
+<tableName>car_parts</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

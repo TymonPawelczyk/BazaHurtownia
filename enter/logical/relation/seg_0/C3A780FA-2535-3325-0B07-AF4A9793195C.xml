@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="car parts vehicles FK" directorySegmentName="seg_0" id="C3A780FA-2535-3325-0B07-AF4A9793195C">
+<createdBy>MSI</createdBy>
+<createdTime>2023-01-22 12:34:44 UTC</createdTime>
+<ownerDesignName>enter</ownerDesignName>
+<engineerTo>
+<item key="1241DCC9-3AD2-1D29-A419-04C03CA01BB0" value="true"/>
+</engineerTo>
+<sourcePk>F83093B6-1BA4-7193-2E23-AD6F64E588F0</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E423DD67-C992-7B5A-FE6B-1D320889DB66</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>60880832-35E2-5DB2-6A0C-2BCE732A1617</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
